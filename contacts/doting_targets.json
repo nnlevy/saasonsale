@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Target 1 - Relationship Coach",
+    "role": "Relationship & Habits Coach",
+    "org": "Independent / Online Creator",
+    "relevance": "Works with busy professionals on building better daily connection habits with partners and teams. Uses prompts and rituals in her programs.",
+    "linkedin": ""
+  },
+  {
+    "name": "Target 2 - Product Ops Lead",
+    "role": "Head of Product Operations",
+    "org": "SaaS / Consumer App Company",
+    "relevance": "Focused on habit formation and retention. Runs experiments on small thoughtful touches that improve user and team stickiness.",
+    "linkedin": ""
+  },
+  {
+    "name": "Target 3 - Community Builder",
+    "role": "Creator & Community Lead",
+    "org": "Newsletter / Membership Community",
+    "relevance": "Builds engaged audiences and wants better tools to turn one-off engagement into consistent, meaningful relationships.",
+    "linkedin": ""
+  }
+]

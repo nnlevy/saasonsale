@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "categories": [
+    { "id": "start", "title": "Start Here", "order": 10 },
+    { "id": "how-it-works", "title": "How Doting Lessons Work", "order": 20 },
+    { "id": "skill-guides", "title": "Skill Guides", "order": 30 },
+    { "id": "product-faq", "title": "Product & FAQs", "order": 40 },
+    { "id": "support", "title": "Get Support", "order": 50 }
+  ]
+}

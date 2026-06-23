@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-19T02:05:04.647089+00:00",
+  "domain": "doting.co",
+  "brand": "Doting",
+  "positioning": "Doting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through.",
+  "audiences": "relationship coaches, creators with audience communities, and product/ops leaders focused on habit retention.",
+  "confidence_opening": "I am not pitching you a big platform change. I am pressure-testing one practical workflow and I value your direct feedback.",
+  "confidence_cta": "Would you be open to a 60-second walkthrough and one specific reaction on where this lands or misses?",
+  "linkedin_drafts": [
+    {
+      "contact": {
+        "name": "Target 1 - Relationship Coach",
+        "role": "Relationship & Habits Coach",
+        "org": "Independent / Online Creator",
+        "relevance": "Works with busy professionals on building better daily connection habits with partners and teams. Uses prompts and rituals in her programs.",
+        "linkedin": ""
+      },
+      "channel": "linkedin",
+      "message": "Hi Target 1 - Relationship Coach (noted your role Relationship & Habits Coach at Independent / Online Creator),\n\nI am not pitching you a big platform change. I am pressure-testing one practical workflow and I value your direct feedback. Doting simple AI-guided prompts for meaningful gestures. useful for teams that want to improve retention through small thoughtful acts.\n\nDoting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through.\n\nWould you be open to a 60-second walkthrough and one specific reaction on where this lands or misses?\n\nBest,\nNir",
+      "reason": "Confidence ask using Wake-Up Launchpad for doting.co — targets relationship coaches, creators with audience communities, and product/ops leaders focused on habit retention..",
+      "positioning_used": "Doting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through."
+    },
+    {
+      "contact": {
+        "name": "Target 2 - Product Ops Lead",
+        "role": "Head of Product Operations",
+        "org": "SaaS / Consumer App Company",
+        "relevance": "Focused on habit formation and retention. Runs experiments on small thoughtful touches that improve user and team stickiness.",
+        "linkedin": ""
+      },
+      "channel": "linkedin",
+      "message": "Hi Target 2 - Product Ops Lead (noted your role Head of Product Operations at SaaS / Consumer App Company),\n\nI am not pitching you a big platform change. I am pressure-testing one practical workflow and I value your direct feedback. Doting simple AI-guided prompts for meaningful gestures. useful for teams that want to improve retention through small thoughtful acts.\n\nDoting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through.\n\nWould you be open to a 60-second walkthrough and one specific reaction on where this lands or misses?\n\nBest,\nNir",
+      "reason": "Confidence ask using Wake-Up Launchpad for doting.co — targets relationship coaches, creators with audience communities, and product/ops leaders focused on habit retention..",
+      "positioning_used": "Doting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through."
+    },
+    {
+      "contact": {
+        "name": "Target 3 - Community Builder",
+        "role": "Creator & Community Lead",
+        "org": "Newsletter / Membership Community",
+        "relevance": "Builds engaged audiences and wants better tools to turn one-off engagement into consistent, meaningful relationships.",
+        "linkedin": ""
+      },
+      "channel": "linkedin",
+      "message": "Hi Target 3 - Community Builder (noted your role Creator & Community Lead at Newsletter / Membership Community),\n\nI am not pitching you a big platform change. I am pressure-testing one practical workflow and I value your direct feedback. Doting simple AI-guided prompts for meaningful gestures. useful for teams that want to improve retention through small thoughtful acts.\n\nDoting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through.\n\nWould you be open to a 60-second walkthrough and one specific reaction on where this lands or misses?\n\nBest,\nNir",
+      "reason": "Confidence ask using Wake-Up Launchpad for doting.co — targets relationship coaches, creators with audience communities, and product/ops leaders focused on habit retention..",
+      "positioning_used": "Doting helps people strengthen real relationships with simple AI-guided prompts, thoughtful gestures, and easy follow-through."
+    }
+  ],
+  "instructions": [
+    "These are DRAFT-ONLY. Review, personalize further if needed, and send manually.",
+    "After sending, log replies (resonates / does not / unclear).",
+    "Use reply signals to update one headline or CTA in the site before the next wave.",
+    "Do not auto-send. Respect LinkedIn limits and the 'feedback first' goal."
+  ],
+  "morning_workflow_step": "Send 3 ... feedback requests to housing/utility adjacent operators."
+}

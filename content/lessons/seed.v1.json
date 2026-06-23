@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "tracks": [
+    { "id": "basics", "title": "Doting Basics", "description": "Small daily gestures that feel natural—and actually happen.", "icon": "spark" },
+    { "id": "listening", "title": "Deep Listening", "description": "Make people feel seen, understood, and safe to be real.", "icon": "ear" },
+    { "id": "connection", "title": "Everyday Connection", "description": "Notice tiny invitations and turn toward them with warmth.", "icon": "link" },
+    { "id": "appreciation", "title": "Appreciation", "description": "Celebrate good news and say thank you in ways that land.", "icon": "sun" }
+  ],
+  "lessons": [
+    {
+      "id": "basics-001",
+      "trackId": "basics",
+      "unit": 1,
+      "title": "One gesture, today",
+      "estimatedMinutes": 3,
+      "cp": 15,
+      "sources": [
+        { "id": "gottman-detached-dating-2018", "title": "How to Stop Detached Dating and Create Real Connection", "publisher": "The Gottman Institute", "year": 2018, "url": "https://www.gottman.com/blog/how-to-stop-detached-dating-and-create-real-connection/" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "The Doting rule",
+          "body": "Better than a grand gesture: one small, specific act of care you actually do.",
+          "sourceIds": ["gottman-detached-dating-2018"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which is the most Doting gesture?",
+          "choices": [
+            { "id": "a", "text": "Say “we should catch up sometime.”" },
+            { "id": "b", "text": "Send a short message that references something they mentioned this week." },
+            { "id": "c", "text": "Wait until a holiday to reach out." }
+          ],
+          "answerId": "b",
+          "explain": "Specific + timely beats vague + delayed."
+        },
+        {
+          "type": "reflect",
+          "prompt": "Who do you want to nurture this week? (First name or initials)",
+          "placeholder": "e.g., Sam"
+        },
+        {
+          "type": "compose",
+          "prompt": "Draft a 1–2 sentence check‑in. Make it specific, warm, and low‑pressure.",
+          "rubric": [
+            "Mentions something real (context)",
+            "Asks a small question or makes a small offer",
+            "Warm tone, no guilt-trip"
+          ],
+          "placeholder": "e.g., “Hey Sam — how did your presentation go? Want a quick coffee this week?”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Send your check‑in today.",
+          "cta": [
+            { "id": "copy", "label": "Copy message" },
+            { "id": "card", "label": "Generate a greeting card" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "basics-002",
+      "trackId": "basics",
+      "unit": 1,
+      "title": "Make it easy: the if‑then plan",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "lally-2010", "title": "How are habits formed: Modelling habit formation in the real world", "publisher": "European Journal of Social Psychology", "year": 2010, "url": "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/How-are-habits-formed-Modelling-habit/99783513802346" },
+        { "id": "gollwitzer-sheeran-2006", "title": "Implementation Intentions and Goal Achievement: A Meta-analysis of Effects and Processes", "publisher": "Advances in Experimental Social Psychology", "year": 2006, "url": "https://www.sciencedirect.com/science/article/abs/pii/S0065260106380021" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Good intentions need a handle",
+          "body": "A tiny plan beats a big promise. “If X happens, then I’ll do Y.”",
+          "sourceIds": ["gollwitzer-sheeran-2006"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which plan is most likely to happen?",
+          "choices": [
+            { "id": "a", "text": "“I’ll be more thoughtful.”" },
+            { "id": "b", "text": "“If I pour my morning coffee, then I’ll send one check‑in.”" },
+            { "id": "c", "text": "“I’ll do something sweet soon.”" }
+          ],
+          "answerId": "b",
+          "explain": "Specific cue + specific action = fewer decisions later."
+        },
+        {
+          "type": "reflect",
+          "prompt": "Pick your cue: when could your gesture naturally fit?",
+          "placeholder": "e.g., after lunch, on the train, when I open my laptop…"
+        },
+        {
+          "type": "compose",
+          "prompt": "Write your if‑then plan. Keep it tiny.",
+          "rubric": [
+            "Has a clear cue (If…)",
+            "Has a clear action (Then…)",
+            "Feels realistic"
+          ],
+          "placeholder": "e.g., “If I finish lunch, then I’ll send one kind message.”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Set a reminder for your cue—so your plan has backup.",
+          "cta": [
+            { "id": "reminder", "label": "Create a reminder" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "basics-003",
+      "trackId": "basics",
+      "unit": 1,
+      "title": "Warm specificity",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "reis-2004", "title": "Perceived Partner Responsiveness as an Organizing Construct in the Study of Intimacy and Closeness", "publisher": "Handbook chapter (PDF)", "year": 2004, "url": "https://www.sas.rochester.edu/psy/people/faculty/reis_harry/assets/pdf/ReisClarkHolmes_2004.pdf" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Specific is a form of love",
+          "body": "People tend to feel closer when they feel understood and cared for—specificity helps communicate that.",
+          "sourceIds": ["reis-2004"]
+        },
+        {
+          "type": "scenario",
+          "prompt": "Which message feels most responsive?",
+          "choices": [
+            { "id": "a", "text": "“Thinking of you.”" },
+            { "id": "b", "text": "“Thinking of you—how did your new project kickoff go?”" },
+            { "id": "c", "text": "“Hope you’re fine.”" }
+          ],
+          "answerId": "b",
+          "explain": "The detail signals: I noticed you. I remember you."
+        },
+        {
+          "type": "reflect",
+          "prompt": "What’s one detail you can reference?",
+          "placeholder": "e.g., their trip, exam, new job, sick kid, hobby…"
+        },
+        {
+          "type": "compose",
+          "prompt": "Rewrite a generic check‑in into a specific one.",
+          "rubric": [
+            "Includes one real detail",
+            "Invites, doesn’t demand",
+            "Feels like your voice"
+          ],
+          "placeholder": "e.g., “Hey—how’s your ankle feeling after the hike?”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Send the specific version.",
+          "cta": [
+            { "id": "copy", "label": "Copy message" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "listening-001",
+      "trackId": "listening",
+      "unit": 1,
+      "title": "Validation vs. fixing",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "smallen-2021", "title": "Perceptions of Partner Responsiveness Across the Transition to Parenthood", "publisher": "PMC", "year": 2021, "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8825924/" },
+        { "id": "reis-2004", "title": "Perceived Partner Responsiveness as an Organizing Construct in the Study of Intimacy and Closeness", "publisher": "PDF", "year": 2004, "url": "https://www.sas.rochester.edu/psy/people/faculty/reis_harry/assets/pdf/ReisClarkHolmes_2004.pdf" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "A common trap",
+          "body": "When someone shares stress, solutions can feel like a shortcut. Often, understanding comes first.",
+          "sourceIds": ["reis-2004","smallen-2021"]
+        },
+        {
+          "type": "scenario",
+          "prompt": "Someone says: “Work was brutal today.” Pick the best first response.",
+          "choices": [
+            { "id": "a", "text": "“You should talk to your manager tomorrow.”" },
+            { "id": "b", "text": "“That sounds exhausting. Want to vent, want advice, or want a distraction?”" },
+            { "id": "c", "text": "“That’s life. You’ll be fine.”" }
+          ],
+          "answerId": "b",
+          "explain": "Name the feeling + offer options. Solutions can come later."
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which phrase is most validating?",
+          "choices": [
+            { "id": "a", "text": "“I get why that would bother you.”" },
+            { "id": "b", "text": "“You’re overthinking it.”" },
+            { "id": "c", "text": "“Just ignore them.”" }
+          ],
+          "answerId": "a",
+          "explain": "Validation doesn’t mean agreement; it means understanding."
+        },
+        {
+          "type": "compose",
+          "prompt": "Rewrite this into something validating: “You’re being dramatic.”",
+          "rubric": [
+            "Avoids insults",
+            "Reflects emotion",
+            "Invites more context"
+          ],
+          "placeholder": "e.g., “This feels really big for you—tell me what part is hitting hardest.”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Use one validating line in a real conversation within 24 hours.",
+          "cta": [
+            { "id": "save", "label": "Save a reminder" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "listening-002",
+      "trackId": "listening",
+      "unit": 1,
+      "title": "Mirror + label: active listening in one sentence",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "ncbi-active-listening-2023", "title": "Active Listening (StatPearls)", "publisher": "NCBI Bookshelf", "year": 2023, "url": "https://www.ncbi.nlm.nih.gov/books/NBK442015/" },
+        { "id": "kawamichi-2014", "title": "Perceiving active listening activates the reward system and improves the impression of relevant experiences", "publisher": "PMC", "year": 2014, "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4270393/" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Listening isn’t silent",
+          "body": "Active listening includes feedback—so the other person knows you got it.",
+          "sourceIds": ["ncbi-active-listening-2023"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which response is the best “mirror + label”?",
+          "choices": [
+            { "id": "a", "text": "“Don’t worry, it’ll be fine.”" },
+            { "id": "b", "text": "“It sounds like you’re overwhelmed and tired.”" },
+            { "id": "c", "text": "“Well, what did you expect?”" }
+          ],
+          "answerId": "b",
+          "explain": "It reflects content + emotion without rushing to solve."
+        },
+        {
+          "type": "scenario",
+          "prompt": "A friend says: “I feel like I’m failing.” Pick the best first reply.",
+          "choices": [
+            { "id": "a", "text": "“No you’re not. Stop saying that.”" },
+            { "id": "b", "text": "“It sounds like you’re carrying a lot of pressure.”" },
+            { "id": "c", "text": "“Let’s talk about productivity tips.”" }
+          ],
+          "answerId": "b",
+          "explain": "Start with understanding; direction can come later."
+        },
+        {
+          "type": "compose",
+          "prompt": "Write one mirror + label sentence for someone in your life.",
+          "rubric": [
+            "Starts with “It sounds like…” or similar",
+            "Names an emotion (even gently)",
+            "No advice yet"
+          ],
+          "placeholder": "e.g., “It sounds like you’re frustrated and feeling stuck.”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Use your sentence once this week.",
+          "cta": [
+            { "id": "bookmark", "label": "Save as a go-to line" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "listening-003",
+      "trackId": "listening",
+      "unit": 1,
+      "title": "One curious question",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "ncbi-active-listening-2023", "title": "Active Listening (StatPearls)", "publisher": "NCBI Bookshelf", "year": 2023, "url": "https://www.ncbi.nlm.nih.gov/books/NBK442015/" },
+        { "id": "weinstein-2022", "title": "The motivational value of listening during intimate and difficult conversations", "publisher": "Social and Personality Psychology Compass", "year": 2022, "url": "https://compass.onlinelibrary.wiley.com/doi/10.1111/spc3.12651" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Curiosity is a kind of care",
+          "body": "A single warm question can turn a moment into a conversation.",
+          "sourceIds": ["weinstein-2022"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which is the most curious (and least leading) question?",
+          "choices": [
+            { "id": "a", "text": "“Why did you do that?”" },
+            { "id": "b", "text": "“What part of this feels most important to you?”" },
+            { "id": "c", "text": "“Don’t you think you’re wrong?”" }
+          ],
+          "answerId": "b",
+          "explain": "It invites meaning without putting someone on trial."
+        },
+        {
+          "type": "scenario",
+          "prompt": "Someone says: “I don’t know what I’m doing.” What question fits best?",
+          "choices": [
+            { "id": "a", "text": "“Have you tried being more organized?”" },
+            { "id": "b", "text": "“What’s the hardest moment lately?”" },
+            { "id": "c", "text": "“Okay.”" }
+          ],
+          "answerId": "b",
+          "explain": "Gently helps them locate what’s real."
+        },
+        {
+          "type": "compose",
+          "prompt": "Write one curious question you can ask your focus person this week.",
+          "rubric": [
+            "Open-ended (not yes/no)",
+            "Warm tone",
+            "Not a disguised suggestion"
+          ],
+          "placeholder": "e.g., “What’s something you wish I understood better lately?”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Ask it—and then pause long enough for a real answer.",
+          "cta": [
+            { "id": "reminder", "label": "Set a gentle reminder" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "connection-001",
+      "trackId": "connection",
+      "unit": 1,
+      "title": "Spot the invitation",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "gottman-detached-dating-2018", "title": "How to Stop Detached Dating and Create Real Connection", "publisher": "The Gottman Institute", "year": 2018, "url": "https://www.gottman.com/blog/how-to-stop-detached-dating-and-create-real-connection/" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Tiny bids matter",
+          "body": "People invite connection in small ways: a comment, a sigh, a meme, a “look at this.” Noticing is half the skill.",
+          "sourceIds": ["gottman-detached-dating-2018"]
+        },
+        {
+          "type": "scenario",
+          "prompt": "A friend texts: “This week has been a lot 😮‍💨” What is this most likely?",
+          "choices": [
+            { "id": "a", "text": "A bid for connection" },
+            { "id": "b", "text": "A request for advice only" },
+            { "id": "c", "text": "Nothing; ignore it" }
+          ],
+          "answerId": "a",
+          "explain": "It’s an opening. Your job is to turn toward it."
+        },
+        {
+          "type": "mcq",
+          "prompt": "Pick the best “turn toward” reply:",
+          "choices": [
+            { "id": "a", "text": "“lol same”" },
+            { "id": "b", "text": "“Want to tell me what’s been the hardest part?”" },
+            { "id": "c", "text": "“That’s vague.”" }
+          ],
+          "answerId": "b",
+          "explain": "Warm curiosity builds connection."
+        },
+        {
+          "type": "reflect",
+          "prompt": "What’s one way your focus person usually “bids” for attention?",
+          "placeholder": "e.g., sends links, makes jokes, sighs, asks small questions…"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Respond to one bid today with warmth + curiosity.",
+          "cta": [
+            { "id": "plan", "label": "Pick a moment to practice" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "connection-002",
+      "trackId": "connection",
+      "unit": 1,
+      "title": "Turn toward in 10 seconds",
+      "estimatedMinutes": 4,
+      "cp": 20,
+      "sources": [
+        { "id": "gottman-detached-dating-2018", "title": "How to Stop Detached Dating and Create Real Connection", "publisher": "The Gottman Institute", "year": 2018, "url": "https://www.gottman.com/blog/how-to-stop-detached-dating-and-create-real-connection/" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "A fast reply can be a deep reply",
+          "body": "Turning toward can be tiny: a warm acknowledgment plus one small invitation.",
+          "sourceIds": ["gottman-detached-dating-2018"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which reply is best if you only have 10 seconds?",
+          "choices": [
+            { "id": "a", "text": "“Busy.”" },
+            { "id": "b", "text": "“I saw this—thinking of you. Want to tell me more later?”" },
+            { "id": "c", "text": "No reply." }
+          ],
+          "answerId": "b",
+          "explain": "It acknowledges + keeps the door open."
+        },
+        {
+          "type": "reflect",
+          "prompt": "What’s a moment you often miss bids?",
+          "placeholder": "e.g., during work, bedtime, commuting…"
+        },
+        {
+          "type": "compose",
+          "prompt": "Write your 10‑second “turn toward” line.",
+          "rubric": [
+            "Acknowledges them",
+            "Signals care",
+            "Invites later if needed"
+          ],
+          "placeholder": "e.g., “I’m in the middle of something—can I call you tonight? I care.”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Use your line once this week.",
+          "cta": [
+            { "id": "save", "label": "Save this line" }
+          ],
+          "bonusCp": 10
+        }
+      ]
+    },
+    {
+      "id": "connection-003",
+      "trackId": "connection",
+      "unit": 1,
+      "title": "Repair like a pro",
+      "estimatedMinutes": 5,
+      "cp": 25,
+      "sources": [
+        { "id": "gottman-mulligans", "title": "Mastering Marriage Conflict with Mulligans", "publisher": "The Gottman Institute", "year": 2017, "url": "https://www.gottman.com/blog/mastering-marriage-conflict-mulligans/" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Repair is a reset button",
+          "body": "A repair attempt is a small action or phrase that stops negativity from spiraling and helps you restart with respect.",
+          "sourceIds": ["gottman-mulligans"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which is the best repair line mid‑tension?",
+          "choices": [
+            { "id": "a", "text": "“Whatever.”" },
+            { "id": "b", "text": "“I’m getting sharp. Can we restart? I care about you.”" },
+            { "id": "c", "text": "“You always do this.”" }
+          ],
+          "answerId": "b",
+          "explain": "It names the moment and protects the relationship while you fix the issue."
+        },
+        {
+          "type": "scenario",
+          "prompt": "You hear yourself snapping. What’s the best next move?",
+          "choices": [
+            { "id": "a", "text": "Double down until you win." },
+            { "id": "b", "text": "Make a small repair: soften tone, apologize for sharpness, propose a restart." },
+            { "id": "c", "text": "Walk away forever." }
+          ],
+          "answerId": "b",
+          "explain": "Repair doesn’t erase the problem; it protects the way you solve it."
+        },
+        {
+          "type": "compose",
+          "prompt": "Write one repair phrase that sounds like you.",
+          "rubric": [
+            "Short",
+            "Owns tone (not blame)",
+            "Invites restart"
+          ],
+          "placeholder": "e.g., “I’m coming in hot—can I try that again more kindly?”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Use your repair phrase once in the next 2 weeks.",
+          "cta": [
+            { "id": "bookmark", "label": "Save as my repair phrase" }
+          ],
+          "bonusCp": 15
+        }
+      ]
+    },
+    {
+      "id": "appreciation-001",
+      "trackId": "appreciation",
+      "unit": 1,
+      "title": "React to good news",
+      "estimatedMinutes": 5,
+      "cp": 25,
+      "sources": [
+        { "id": "gable-2004", "title": "What do you do when things go right? The intrapersonal and interpersonal benefits of sharing positive events", "publisher": "PubMed", "year": 2004, "url": "https://pubmed.ncbi.nlm.nih.gov/15301629/" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Good news is connection fuel",
+          "body": "When someone shares a positive event, your enthusiastic engagement can deepen the moment—and the bond.",
+          "sourceIds": ["gable-2004"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Someone says: “I got the job!” What’s the best response?",
+          "choices": [
+            { "id": "a", "text": "“Nice.”" },
+            { "id": "b", "text": "“That’s huge! Tell me what happened—how are you feeling right now?”" },
+            { "id": "c", "text": "“Cool. I had a long day.”" }
+          ],
+          "answerId": "b",
+          "explain": "Celebrate + invite the story."
+        },
+        {
+          "type": "compose",
+          "prompt": "Write your 3‑part good‑news reply (celebrate + ask + savor).",
+          "rubric": [
+            "Shows genuine excitement",
+            "Asks one question",
+            "Suggests a small celebration"
+          ],
+          "placeholder": "e.g., “YES!! I’m so proud of you. What part feels best? Want to celebrate this weekend?”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Use your reply the next time someone shares good news.",
+          "cta": [
+            { "id": "save", "label": "Save this as a template" }
+          ],
+          "bonusCp": 15
+        }
+      ]
+    },
+    {
+      "id": "appreciation-002",
+      "trackId": "appreciation",
+      "unit": 1,
+      "title": "Gratitude that lands",
+      "estimatedMinutes": 5,
+      "cp": 25,
+      "sources": [
+        { "id": "algoe-2012", "title": "Find, Remind, and Bind: The Functions of Gratitude in Everyday Relationships", "publisher": "Semantic Scholar (entry)", "year": 2012, "url": "https://www.semanticscholar.org/paper/Find%2C-Remind%2C-and-Bind%3A-The-Functions-of-Gratitude-Algoe/7a004515ff204fc99cd975b39ff373ba3ffdb33d" }
+      ],
+      "steps": [
+        {
+          "type": "info",
+          "title": "Specific appreciation feels real",
+          "body": "Gratitude can strengthen bonds when it’s concrete and personal.",
+          "sourceIds": ["algoe-2012"]
+        },
+        {
+          "type": "mcq",
+          "prompt": "Which thank‑you is most likely to land?",
+          "choices": [
+            { "id": "a", "text": "“Thanks for everything.”" },
+            { "id": "b", "text": "“Thank you for picking up dinner—it took pressure off me tonight.”" },
+            { "id": "c", "text": "“You’re supposed to help.”" }
+          ],
+          "answerId": "b",
+          "explain": "Noticed action + specific impact."
+        },
+        {
+          "type": "compose",
+          "prompt": "Write a 3‑part gratitude note (notice + impact + value).",
+          "rubric": [
+            "Mentions a specific action",
+            "Names the impact",
+            "Names what you value"
+          ],
+          "placeholder": "e.g., “When you checked on me after my meeting, it helped me breathe. I value how you show up.”"
+        },
+        {
+          "type": "gesture",
+          "prompt": "Gesture challenge",
+          "challenge": "Send your note (text or card).",
+          "cta": [
+            { "id": "copy", "label": "Copy note" },
+            { "id": "card", "label": "Turn into a greeting card" }
+          ],
+          "bonusCp": 15
+        }
+      ]
+    }
+  ]
+}

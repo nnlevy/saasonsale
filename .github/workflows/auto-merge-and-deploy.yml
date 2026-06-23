@@ -1,0 +1,54 @@
+name: Auto Merge and Deploy
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check approval
+        id: approval
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER=${{ github.event.pull_request.number }}
+          # Count approved reviews
+          APPROVED_COUNT=$(gh pr view $PR_NUMBER --json reviews | jq '[.reviews[] | select(.state == "APPROVED")] | length')
+          # Check if mergeable
+          MERGEABLE=$(gh pr view $PR_NUMBER --json mergeable | jq -r '.mergeable')
+          echo "approved_count=$APPROVED_COUNT" >> $GITHUB_OUTPUT
+          echo "mergeable=$MERGEABLE" >> $GITHUB_OUTPUT
+
+  automerge:
+    needs: triage
+    runs-on: ubuntu-latest
+    if: needs.triage.outputs.approved_count-from-approval >= 1 && needs.triage.outputs.mergeable-from-approval == 'MERGEABLE'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Merge PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} --squash --delete-branch
+
+  deploy:
+    needs: automerge
+    runs-on: ubuntu-latest
+    if: always()  # or check if merged
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Deploy to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

@@ -1,0 +1,43 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "saasonsale",
+	"main": "./src/worker/index.ts",
+	"compatibility_date": "2026-06-23",
+	"compatibility_flags": ["nodejs_compat"],
+	"routes": ["saasonsale.com/*", "www.saasonsale.com/*"],
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"assets": {
+		"directory": "./dist/client",
+		"not_found_handling": "single-page-application"
+	},
+	"d1_databases": [
+		{
+			"binding": "DOMAINS_D1_DB",
+			"database_name": "users_across_domains",
+			"database_id": "b41e909b-ad01-4fd5-84ca-d8d014706942"
+		}
+	],
+	"kv_namespaces": [
+		{
+			"binding": "USER_SESSIONS_KV_ACROSS_DOMAINS",
+			"id": "ce39949d2f244c78b3e19967288f44fb"
+		}
+	],
+	"services": [
+		{
+			"binding": "PORTFOLIO_AI_SERVICE",
+			"service": "riskfreetrial",
+			"entrypoint": "PortfolioAIService",
+			"remote": true
+		},
+		{
+			"binding": "PORTFOLIO_BILLING_SERVICE",
+			"service": "riskfreetrial",
+			"entrypoint": "PortfolioBillingService",
+			"remote": true
+		}
+	]
+}
