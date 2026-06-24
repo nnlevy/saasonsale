@@ -2,7 +2,7 @@
 
 AI-powered platform for discovering the best seasonal SaaS deals, analyzing your tool stack for savings opportunities, and delivering delightful, actionable recommendations. Part of Nir's automated domains revenue platform.
 
-Built with the same framework as doting.co and watershortcut.com: React + Vite + Hono on Cloudflare Workers, shared portfolio D1/KV/AI/Billing services.
+Built with the same framework as doting.co and watershortcut.com: React + Vite + Hono on Cloudflare Workers, shared portfolio D1/KV/AI/Billing services. (AI card generator in services/ai.ts supports doting-style remixer/payforward/streak modes via CardRequest flags for custom reuse like "deals journeys".)
 
 [![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/cloudflare/templates/tree/main/vite-react-template)
 
@@ -28,6 +28,7 @@ This template provides a minimal setup for building a React application with Typ
 - 🎯 API routes with Hono's elegant routing
 - 🔄 Full-stack development setup
 - 🔎 Built-in Observability to monitor your Worker
+- 🧠 AI card generator (services/ai.ts) includes full Social Memory & Habit framework support (CardRequest isRemixJourney / isStreakBadge / isPayForward + special buildCardPrompt + generateJourneySummary + fallbacks). Fits perfectly for "savings/deals journey" remixer from user history, streak badges for consistent deal hunting habits, pay-forward anonymous savings tips. Ready for 1% UI launchers in library/analyzer (see watershortcut pilot + 2026-domains-progress/patterns/social-memory-habit-pattern.md). Ties revenue: engagement -> shares -> traffic -> affiliates/credits.
 
 Get started in minutes with local development or deploy directly via the Cloudflare dashboard. Perfect for building modern, performant web applications at the edge.
 
