@@ -31,6 +31,7 @@ type CardRequest = {
 	customMessage: string;
 	styleNotes: string;
 	// New remix / special modes for Memory Remixer, streak badges, pay-it-forward
+	// Note: supports doting-style remixer/payforward/streak modes via CardRequest flags for custom use (e.g. saasonsale "deals journey" summaries from user history, savings streaks, anonymous deal tips). Framework preserved intentionally; product branding sanitized below.
 	isRemixJourney?: boolean;
 	journeySummary?: string;
 	pastMomentsCount?: number;
@@ -520,7 +521,7 @@ const fallbackCard = (request: CardRequest): CardResponse => {
 	let title = `Happy ${request.occasion}!`;
 	let subtitle = `For ${request.recipient}`;
 	let message = `${opening} ${request.customMessage || "you make everything feel brighter."} Here’s to more celebrations together.`;
-	let signoff = "With love, from doting";
+	let signoff = "With appreciation,";
 
 	if (request.isRemixJourney) {
 		title = "Our Journey";
@@ -530,8 +531,8 @@ const fallbackCard = (request: CardRequest): CardResponse => {
 	} else if (request.isStreakBadge) {
 		const d = request.streakDays || 7;
 		title = `${d}-Day Streak`;
-		subtitle = "Our doting habit";
-		message = `We've shown up for each other ${d} days running. Every prompt met, every little proof of care. This streak is ours.`;
+		subtitle = "Your savings streak";
+		message = `We've shown up for each other ${d} days running. Every deal spotted, every smart save. This streak is ours.`;
 		signoff = "Keep choosing us";
 	} else if (request.isPayForward) {
 		title = "For you, today";
@@ -788,7 +789,7 @@ const ensureIllustratedCard = (
 				? appendNeonStarsLayer(backgroundSvg)
 				: backgroundSvg,
 		mascotSvg,
-		signoff: parsed.signoff || "With love, from doting",
+		signoff: parsed.signoff || "With appreciation,",
 		message: normalizedMessage,
 		typography: parsed.typography || typography.fontFamily,
 		fontCssUrl: normalizedFontCssUrl,
@@ -1096,7 +1097,7 @@ export const generateNurtureChatResponse = async (
 		const variants = [
 			`You’re in "${promptHint}" ${moment}. Send a 1‑sentence text that names one specific thing you appreciate about them right now, then ask a tiny yes/no question that makes reconnecting easy (e.g., “Want me to grab you water/coffee when we land?”).`,
 			`Tie it to "${promptHint}" ${moment}: send a quick voice note opener that starts with one sensory detail (what you see/hear), then one warm line about them, then a simple plan for the next 10 minutes.`,
-			`Use "${promptHint}" ${moment} as your anchor: send a photo of what you’re seeing + one line that makes them feel chosen (“I’m thinking of you in this moment”), then propose one small ritual for later (5 minutes). For credits or business questions: you get 10 to start, 1 per card; works for client notes with Professional tone. See https://doting.co/pricing and https://growth.business .`,
+			`Use "${promptHint}" ${moment} as your anchor: send a photo of what you’re seeing + one line that makes them feel chosen (“I’m thinking of you in this moment”), then propose one small ritual for later (5 minutes). For credits or business questions: you get 10 to start, 1 per card; works for client notes with Professional tone. See https://growth.business for packs and more tools.`,
 		];
 		return variants[seed % variants.length];
 	}
@@ -1107,11 +1108,11 @@ export const generateNurtureChatResponse = async (
 
 	if (isMetaQuestion) {
 		// Honest, direct answers for SBOs and transparency. Never dodge.
-		return "You start with 10 local credits (FREE_CARD_LIMIT of 3 free cards tracked separately). Creating a card or major AI action costs 1 credit — visible in the toll/credit pill, changes animate. Transparent packs at https://doting.co/pricing (e.g. Care Boost for 25 credits). Works excellently for small business owners: use the Professional tone for specific client thank-yous after jobs or referrals (e.g. 'Thank you for choosing Alex's Home Services...'). No generic fluff. Visit the growth.business hub for more SBO tools: https://growth.business . If you want, tell me the client name + occasion and I'll help draft one.";
+		return "You start with 10 local credits (FREE_CARD_LIMIT of 3 free cards tracked separately). Creating a card or major AI action costs 1 credit — visible in the toll/credit pill, changes animate. Transparent packs at growth.business (e.g. starter boosts). Works excellently for deal hunters and small business owners: use the Professional tone for specific client thank-yous after jobs or referrals (e.g. 'Thank you for choosing Alex's Home Services...'). No generic fluff. Visit the growth.business hub for more SBO tools: https://growth.business . If you want, tell me the client name + occasion and I'll help draft one.";
 	}
 
 	const systemPrompt =
-		"You are doting, the in-app relationship coach for a product that helps users nurture close relationships through daily prompts, gentle reminders, thoughtful gifts, voice notes, and greeting cards. Respond in 2-3 warm sentences, include one specific nurturing idea, and suggest a near-term opportunity to connect. Keep the tone sincere and familiar, avoid the word 'check-in', and give a fresh idea each time (do not mirror the exact wording from the user). Use provided app/profile context to personalize without exposing private data verbatim.";
+		"You are a helpful seasonal deals and savings coach for SaasonSale, a product that helps users discover hot seasonal deals, smart magnesium and supplement stacks, and value buys through analyzers, calendars, and cards. Respond in 2-3 practical sentences, include one specific deal or savings idea, and suggest a near-term action to save or share. Keep the tone friendly and direct, avoid the word 'check-in', and give a fresh idea each time (do not mirror the exact wording from the user). Use provided app/profile context to personalize without exposing private data verbatim. Support special card modes (remixer for user's deals journey, streak badges for savings habits, pay-it-forward anonymous tips) when flags set.";
 	const prompt = [
 		`User request: ${userPrompt}`,
 		context.entryPoint ? `UI location: ${context.entryPoint}` : "",
@@ -1361,7 +1362,7 @@ MEMORY REMIXER MODE — CELEBRATION OF JOURNEY:
 	} else if (isStreak) {
 		specialRules = `
 STREAK BADGE / CIRCLE SHARING MODE:
-- Celebrate a ${request.streakDays || 7}-day streak of showing up for each other with doting.
+- Celebrate a ${request.streakDays || 7}-day streak of showing up for each other with great deals and savings.
 - Proud, joyful, habit-affirming tone. "Our ${request.streakDays || 7}-day streak", "We keep choosing each other".
 - Make it proudly social within real relationships — badge-like but still a full warm card.
 - Title: "${request.streakDays || 7}-Day Streak" or "Our Streak" or "7 Days of Us".

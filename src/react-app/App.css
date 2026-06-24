@@ -1,9 +1,9 @@
-/* ─── Doting.co "Ethereal Affection" Design System ───
-   Based on Stitch editorial redesign.
+/* ─── SaasonSale design (adapted from doting.co "Ethereal Affection" + Stitch editorial) ───
    Primary: #7800ce  Secondary: #006c49  Surface: #fcf8ff
    Fonts: Plus Jakarta Sans (display), Be Vietnam Pro (body)
    No 1px borders. Glassmorphism for floating elements.
    Gradient CTAs. Ambient shadows. Editorial asymmetry.
+   (Social remixer/vault affordance styles cleaned; core theme retained for cards/deals UI.)
 */
 
 :root {
@@ -4987,29 +4987,6 @@ body {
 		font-size: 3rem;
 	}
 }
-/* Memory remixer + pay forward + streak share affordances */
-.vault-card-remix {
-	appearance: none;
-	border: 0;
-	background: rgba(255,255,255,0.65);
-	color: #4c1d95;
-	padding: 2px 6px;
-	border-radius: 6px;
-	line-height: 1;
-	cursor: pointer;
-	opacity: 0.85;
-	transition: opacity .15s, transform .1s;
-}
-.vault-card-remix:hover {
-	opacity: 1;
-	transform: scale(1.05);
-}
-.vault-card-footer {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-}
-
 /* Mood AI Coach widget — phone-first delightful, high engagement */
 .mood-coach-section {
 	margin: 1.25rem 0 0.5rem;
